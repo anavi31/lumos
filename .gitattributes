@@ -1,26 +1,26 @@
 *.dart linguist-detectable=true
+*.yaml linguist-detectable=true
+pubspec.yaml linguist-detectable=true
+
 *.java linguist-detectable=true
+*.properties linguist-detectable=true
 
 *.c linguist-detectable=false
-*.h linguist-detectable=false
 *.cpp linguist-detectable=false
-*.hpp linguist-detectable=false
-*.cc linguist-detectable=false
-*.m linguist-detectable=false
-*.mm linguist-detectable=false
-*.cs linguist-detectable=false
+*.h linguist-detectable=false
 
-android/** linguist-vendored
-ios/** linguist-vendored
-linux/** linguist-vendored
-windows/** linguist-vendored
-macos/** linguist-vendored
-web/** linguist-vendored
-build/** linguist-vendored
+*.cmake linguist-detectable=false
+CMakeLists.txt linguist-detectable=false
 
-.dart_tool/** linguist-vendored
-.packages linguist-vendored
-pubspec.lock linguist-vendored
+web/** linguist-detectable=false
 
-*.log linguist-generated
-*.db linguist-generated
+*.py linguist-detectable=false
+
+.dart_tool/** linguist-detectable=false
+build/** linguist-detectable=false
+
+.vscode/** linguist-detectable=false
+.idea/** linguist-detectable=false
+
+android/** linguist-detectable=false
+ios/** linguist-detectable=false
