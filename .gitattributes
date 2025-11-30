@@ -1,19 +1,15 @@
-# ====== MOSTRAR LINGUAGENS ======
 *.dart linguist-detectable=true
 *.java linguist-detectable=true
 
-# ====== ESCONDER C, C++, C#, Objective-C ======
 *.c linguist-detectable=false
 *.h linguist-detectable=false
 *.cpp linguist-detectable=false
-*.cc linguist-detectable=false
 *.hpp linguist-detectable=false
-*.m linguist-detectable=false   # Objective-C
+*.cc linguist-detectable=false
+*.m linguist-detectable=false
 *.mm linguist-detectable=false
-*.cs linguist-detectable=false  # C#
-*.cmake linguist-detectable=false
+*.cs linguist-detectable=false
 
-# ====== ESCONDER ARQUIVOS GERADOS PELO FLUTTER ======
 android/** linguist-vendored
 ios/** linguist-vendored
 linux/** linguist-vendored
@@ -22,16 +18,9 @@ macos/** linguist-vendored
 web/** linguist-vendored
 build/** linguist-vendored
 
-# ====== ESCONDER ARQUIVOS DO DART TOOL ======
-.linux/** linguist-vendored
 .dart_tool/** linguist-vendored
-.flutter-plugins linguist-vendored
-.flutter-plugins-dependencies linguist-vendored
 .packages linguist-vendored
 pubspec.lock linguist-vendored
 
-# ====== ESCONDER BINÁRIOS E OUTROS ======
-*.lock linguist-generated
 *.log linguist-generated
 *.db linguist-generated
-*.sqlite linguist-generated
