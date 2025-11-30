@@ -32,6 +32,11 @@ migrate_working_dir/
 .pub/
 /build/
 /coverage/
+.dart_tool/
+build/
+**/Default/
+*.log
+*.ldb
 
 # Symbolication related
 app.*.symbols
