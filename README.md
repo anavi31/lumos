@@ -22,14 +22,13 @@ Banco de Dados:
 O sistema utiliza MySQL 8.0.41
 Arquivo .sql completo está em: docs/lumosBD.sql
 
+
 Como rodar o projeto
 
 Backend:
 cd lumos-back
 mvn spring-boot:run
-
-
-
+/////////////////////
 Frontend:
 cd lumos-front
 flutter pub get
