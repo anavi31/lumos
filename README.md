@@ -1,12 +1,11 @@
 Lumos - Projeto acadêmico desenvolvido em Flutter (Frontend) e Spring Boot (Backend) para oferecer um sistema de gerenciamento escolar
---------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 
 Estrutura do Repositório:
 Lumos/
 │
-├── backend/        → API REST em Spring Boot
-├── frontend/       → Aplicativo Flutter
-├── docs/           → Banco de dados
+├── lumos-back/     → API REST em Spring Boot
+├── lumos-front/    → Aplicativo Flutter
 │
 ├── README.md
 └── .gitignore
@@ -22,13 +21,17 @@ Banco de Dados:
 O sistema utiliza MySQL 8.0.41
 Arquivo .sql completo está em: docs/lumosBD.sql
 
+Linguagens utilizadas no ptojero:
+Dart - para a construção do frontend (HTML e JavaScript são derivadas da criação da aplicção web pelo própio Dart)
+JAVA - para a construção do backend, utilizando Java Spring
+
 
 Como rodar o projeto
 
 Backend:
 cd lumos-back
 mvn spring-boot:run
-/////////////////////
+
 Frontend:
 cd lumos-front
 flutter pub get
