@@ -1,5 +1,5 @@
-Lumos - Projeto acadêmico desenvolvido em Flutter (Frontend) e Spring Boot (Backend) para oferecer um sistema de gerenciamento escolar
---------------------------------------------------------------------------------------------------------------------------
+Lumos - Projeto acadêmico desenvolvido para oferecer um sistema de gerenciamento escolar
+----------------------------------------------------------------------------------------------
 
 Estrutura do Repositório:
 Lumos/
