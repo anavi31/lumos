@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Recuperar Senha</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white;
+            width: 80%;
+            max-width: 1100px;
+            height: 600px;
+            border-radius: 20px;
+            display: flex;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Esquerda - formulário */
+        .left {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 80%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #e2f2ff;
+            outline: none;
+        }
+
+        button {
+            width: 85%;
+            padding: 12px;
+            margin-top: 20px;
+            font-size: 16px;
+            border: none;
+            background: #b9baff;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background: #9d9eff;
+        }
+
+        /* Direita - área reservada para imagens */
+        .right {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .fake-image-1,
+        .fake-image-2 {
+            width: 180px;
+            height: 180px;
+            background: #dcdcdc;
+            border-radius: 20px;
+            opacity: 0.4;
+            position: absolute;
+        }
+
+        .fake-image-1 {
+            top: 120px;
+            right: 140px;
+        }
+
+        .fake-image-2 {
+            bottom: 120px;
+            left: 120px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="card">
+
+        <!-- Coluna esquerda -->
+        <div class="left">
+            <h1>Esqueceu a senha?</h1>
+            <p>Você pode recuperar sua conta alterando sua senha!</p>
+
+            <form action="/recuperar-senha" method="post">
+
+                <label for="cpf">Insira seu CPF</label>
+                <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
+
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <!-- Coluna direita (onde ficarão as imagens futuramente) -->
+        <div class="right">
+            <div class="fake-image-1"></div>
+            <div class="fake-image-2"></div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
