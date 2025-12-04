@@ -30,7 +30,7 @@ Como rodar o projeto
 
 Backend:
 cd demo
-???
+mvn spring-boot:run
 
 Frontend:
 cd lumos-front
