@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -13,6 +15,23 @@ class _LoginScreenState extends State<LoginScreen> {
 
   final TextEditingController matriculaController = TextEditingController();
   final TextEditingController senhaController = TextEditingController();
+
+  void login() async {
+    final response = await http.post(
+      Uri.parse("http://localhost:8080/api/login"),
+      body: {
+        'login': matriculaController.text,
+        'senha': senhaController.text,
+      },
+    );
+
+    if (!mounted) return;
+
+    final data = jsonDecode(response.body);
+    String status = data["status"];
+
+    Navigator.pushNamed(context, "/$status");
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -199,7 +218,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             onPressed: () {
-              Navigator.pushReplacementNamed(context, '/pr_home'); // alterar p caralho dps pq a home vai depender de 1 as credenciais estarem corretas e 2 levar pra tela correspondente ao nível de acesso haha
+              Navigator.pushNamed(context, "/al_home");
             },
             child: const Text(
               "Login",
