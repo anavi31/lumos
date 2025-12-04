@@ -4,35 +4,41 @@ import java.time.LocalDate;
 
 public class CadastroCompletoDTO {
 
-    // Dados do aluno
+    // --- Dados do aluno (usuário pessoa física)
     public String nome;
     public String sobrenome;
     public LocalDate dataNascimento;
-    public String sexo;
+    public String sexo; // "M","F","OUTRO"
     public String telefone;
     public String celular;
     public String email;
-    public String loginAluno;
-    public String senhaAluno;
     public String matricula;
     public Integer idTurma;
 
-    // Endereço
+    // Login do aluno
+    public String loginAluno;
+    public String senhaAluno;
+
+    // --- Endereço do aluno (opcional mas presente na tela)
     public String rua;
     public String numero;
     public String bairro;
     public String cep;
     public String complemento;
 
-    // Responsável Acadêmico
-    public String nomeRespAcademico;
-    public String cpfRespAcademico;
-    public String telefoneRespAcademico;
-    public String emailRespAcademico; // <-- ADICIONADO
+    // --- Responsável acadêmico
+    public String nomeResponsavelAcademico;
+    public String cpfResponsavelAcademico;
+    public String telefoneResponsavelAcademico;
+    public String emailResponsavelAcademico;
+    public String loginResponsavelAcademico;
+    public String senhaResponsavelAcademico;
 
-    // Responsável Financeiro
-    public String nomeRespFinanceiro;
-    public String cpfRespFinanceiro;
-    public String telefoneRespFinanceiro;
-    public String emailRespFinanceiro; // <-- ADICIONADO
+    // --- Responsável financeiro
+    public String nomeResponsavelFinanceiro;
+    public String cpfResponsavelFinanceiro;
+    public String telefoneResponsavelFinanceiro;
+    public String emailResponsavelFinanceiro;
+    public String loginResponsavelFinanceiro;
+    public String senhaResponsavelFinanceiro;
 }

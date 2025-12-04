@@ -27,15 +27,13 @@ public class UsuarioService {
         u.setSobrenome(sobrenome);
         u.setDataNascimento(dataNascimento);
 
-        // ---- TRATAMENTO CORRETO DO SEXO ----
         if (sexo != null && !sexo.isBlank()) {
             String s = sexo.trim().toUpperCase();
 
-            // aceita entradas humanas
+
             if (s.equals("MASCULINO")) s = "M";
             if (s.equals("FEMININO")) s = "F";
 
-            // aceita abreviações
             if (s.equals("M") || s.equals("F") || s.equals("OUTRO")) {
                 try {
                     u.setSexo(Sexo.valueOf(s));
@@ -47,7 +45,6 @@ public class UsuarioService {
             }
         }
 
-        // Demais campos
         u.setTelefone(telefone);
         u.setCelular(celular);
         u.setEmail(email);
