@@ -57,7 +57,7 @@ class LumosApp extends StatelessWidget {
           seedColor: const Color(0xFFDCC9FF),
         ),
       ),
-      initialRoute: '/login', // !! VC ALTERA AQUI A TELA QUE VC QUER QUE RODE PRIMEIRO ok !! (só enquanto as credenciais no login n tão prontas)
+      initialRoute: '/login',
 
       routes: {
         '/login': (context) => const LoginScreen(),
